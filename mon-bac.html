@@ -14,9 +14,11 @@
     />
     <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/monBac.css" />
   </head>
   <body>
-    <header id="header">
+    <!-- Header -->
+    <header id="header" class="not-fixed">
       <div class="wrapper">
         <div class="logo">
           <img src="./assets/img/logo.png" alt="Đây là logo" />
@@ -26,7 +28,7 @@
             <a class="active" href="">Trang chủ</a>
           </li>
           <li>
-            <a href="/mon-bac.html">Món bắc</a>
+            <a href="">Món bắc</a>
           </li>
           <li>
             <a href="">Món Trung</a>
@@ -40,42 +42,38 @@
         </ul>
       </div>
     </header>
-    <section class="hero">
-      <div class="content">
-        <h1>Việt Nam Miền Ngon</h1>
-        <p>
-          Nhà hàng Ba Miền chuyên cung cấp những món ăn ngon, chất lượng, đảm
-          bảo vệ sinh cho những thực khách đem lòng yêu mến hương vị đặc trưng
-          của các vùng miền Việt Nam
-        </p>
-        <a class="btn btn-primary" href="">Đặt Món Ngay</a>
+    <!-- End Header -->
+    <section class="intro">
+      <div class="intro__content">
+        <h1>Món Bắc</h1>
+        <p>Nhà hàng Ba Miền</p>
       </div>
+      <div class="overlay"></div>
     </section>
-    <section class="about section">
+    <main class="foods">
       <div class="wrapper">
-        <div class="pictures">
-          <div class="pic">
-            <img src="./assets/img/about1.png" alt="" />
+        <article class="food">
+          <div class="food__thumb">
+            <img src="./assets/img/bundau.png" alt="" />
           </div>
-          <div class="pic">
-            <img src="./assets/img/about2.png" alt="" />
+          <div class="food__content">
+            <div class="food__content-top">
+              <h2>Bún đậu mắm tôm</h2>
+            </div>
+            <div class="food__content-bottom">
+              <p class="description">
+                Là món ăn đơn giản, dân dã trong ẩm thực miền Bắc Việt Nam.
+                Thành phần chính gồm có bún tươi, đậu hũ chiên vàng, chả cốm,
+                nem chua, mắm tôm pha chanh, ớt và ăn kèm với các loại rau thơm
+                như tía tô, kinh giới, rau húng, xà lách, cà pháo...
+              </p>
+            </div>
           </div>
-          <div class="pic">
-            <img src="./assets/img/about3.png" alt="" />
-          </div>
-        </div>
-        <div class="content">
-          <h2>Về chúng tôi</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Perspiciatis, id? Sequi iure adipisci accusantium eligendi cumque!
-            Culpa, nesciunt in et, quas deserunt quam, totam facere minima
-            quibusdam vero laborum quia.
-          </p>
-          <a class="btn btn-primary">Tìm hiểu thêm</a>
-        </div>
+        </article>
       </div>
-    </section>
+    </main>
+
+    <!-- Footer -->
     <footer class="footer">
       <div class="wrapper">
         <div class="col about-us">

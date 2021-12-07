@@ -1,0 +1,61 @@
+.intro {
+  height: 338px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url("../img/intro_monbac.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.intro__content {
+  position: relative;
+  z-index: 99;
+
+  color: #fff;
+}
+
+.intro__content h1 {
+  border-bottom: 2px solid #fff;
+  margin-bottom: 20px;
+}
+
+.intro__content p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.food {
+  display: flex;
+  padding: 35px;
+
+  column-gap: 73px;
+}
+
+.food .food__thumb {
+  flex: 1;
+  width: 449px;
+  height: 365px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.food .food__thumb img {
+  width: 100%;
+}
+
+.food .food__content {
+  flex: 2;
+}
+
+.food .food__content .food__content-bottom .description {
+  background: #eeeeee;
+  padding: 40px;
+  border-radius: 20px;
+}

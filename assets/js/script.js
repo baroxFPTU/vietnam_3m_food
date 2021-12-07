@@ -1,15 +1,15 @@
-const header = document.querySelector("#header");
-const headerWrapper = header.querySelector(".wrapper");
+$(document).ready(function () {
+  const header = $("#header:not(#header.not-fixed");
+  const headerWrapper = header.children(".wrapper");
 
-document.addEventListener("scroll", (e) => {
-  const scrollY = window.scrollY;
-  if (scrollY > 150) {
-    header.style.backgroundColor = "#333";
-    headerWrapper.style.paddingTop = "10px";
-    headerWrapper.style.paddingBottom = "10px";
-  } else {
-    header.style.backgroundColor = "transparent";
-    headerWrapper.style.paddingTop = "42px";
-    headerWrapper.style.paddingBottom = "30px";
-  }
+  $(document).scroll(function (e) {
+    const scrollY = window.scrollY;
+    if (scrollY > 150) {
+      header.css("background-color", "#1c1c1c");
+      headerWrapper.css({ "padding-top": "10px", "padding-bottom": "10px" });
+    } else {
+      header.css("background-color", "transparent");
+      headerWrapper.css({ "padding-top": "42px", "padding-bottom": "30px" });
+    }
+  });
 });
