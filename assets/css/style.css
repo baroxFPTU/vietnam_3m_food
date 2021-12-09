@@ -178,13 +178,23 @@ p {
 .btn {
   display: inline-block;
   padding: 15px 35px;
-  background: #f1d231;
   border-radius: 50rem;
   font-weight: bold;
   font-size: 18px;
-  color: #fff;
   text-transform: uppercase;
   font-family: "GilroyBold", sans-serif;
+  border: none;
+  outline: none;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btn-primary {
+  background: #f1d231;
+  color: #fff;
 }
 
 /* about */
