@@ -1,0 +1,153 @@
+.services,
+.feedback {
+  padding: 100px 0px;
+}
+
+.services__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.services__content::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 239px;
+  width: 100%;
+  height: 2px;
+  background: #f1d231;
+}
+
+.services__content h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.services__content p {
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.services__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.service {
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service__illustr {
+  max-width: 74px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.service h3 {
+  margin-bottom: 20px;
+}
+
+.service p {
+  text-align: center;
+  font-size: 15px;
+}
+
+/* feedback */
+
+.feedback {
+  background-image: url("../img/feedback/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.feedback:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.56);
+  z-index: 97;
+}
+
+.feedback .wrapper {
+  position: relative;
+  z-index: 99;
+}
+
+.feedback .wrapper h2 {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.feedback__list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 50px;
+}
+
+.feedback__item {
+  background-color: #fff;
+  padding: 50px 60px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback__avt {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.feedback__rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  padding: 30px 0;
+}
+
+.feedback__rate .feedback-star {
+  font-size: 1.2rem;
+  color: #f1d231;
+}
+
+.feedback__item p {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+
+  width: 100%;
+}
+
+.feedback__name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "iCiel Pacifico", sans-serif;
+  width: 100%;
+}

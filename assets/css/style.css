@@ -365,3 +365,56 @@ img {
   background-color: rgba(0, 0, 0, 0.56);
   z-index: 97;
 }
+
+.navbar__btn {
+  font-size: 2rem;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  display: none;
+}
+
+#header .wrapper .overlay {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  #header .wrapper .navbar {
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    max-width: 300px;
+    padding-top: 50px;
+    background-color: #fff;
+    z-index: 99;
+    transform: translateX(100%);
+  }
+
+  .navbar__btn {
+    display: block;
+  }
+
+  #header .wrapper .overlay {
+    position: fixed;
+    display: none;
+  }
+
+  #header .wrapper .navbar > li {
+    width: 100%;
+  }
+  #header .wrapper .navbar > li > a {
+    color: #333;
+    width: 100%;
+    display: inline-block;
+    padding: 15px;
+  }
+
+  .navbar > li > a:hover,
+  .navbar > li > a.active {
+    border-bottom: none;
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+}
