@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  AOS.init();
   let header = $("#header");
   const navbarBtn = $(".navbar__btn");
   const headerWrapper = header.children(".wrapper");

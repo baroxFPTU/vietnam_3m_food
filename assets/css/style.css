@@ -135,6 +135,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 
   display: flex;
   justify-content: center;
@@ -165,9 +166,11 @@ p {
   color: #fff;
   margin-bottom: 27px;
   line-height: 1.5;
+  z-index: 8;
 }
 
 .hero .content p {
+  z-index: 7;
   color: #fff;
   font-size: 18px;
   text-align: center;
