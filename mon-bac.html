@@ -39,6 +39,18 @@
           <li>
             <a href="./danh-gia.html">Đánh giá</a>
           </li>
+          <li class="cart">
+            <button class="btn btn-primary btn-cart">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="amount">0</span>
+            </button>
+            <div class="my-cart">
+              <div class="list-products">
+                <p>Bạn chưa thêm món ăn nào.</p>
+              </div>
+              <span class="total-amount">100</span>
+            </div>
+          </li>
         </ul>
         <button class="navbar__btn"><i class="fas fa-bars"></i></button>
         <div class="overlay"></div>
@@ -64,7 +76,7 @@
                 <h2>Bún đậu mắm tôm</h2>
                 <div class="food-actions__add">
                   <span class="food-price">100.000đ</span>
-                  <button class="btn btn-add">+</button>
+                  <button class="btn btn-add" onClick="addFood(1)">+</button>
                 </div>
               </div>
               <div class="food-actions__rate">
@@ -95,7 +107,7 @@
                 <h2>Chả cá lã vọng</h2>
                 <div class="food-actions__add">
                   <span class="food-price">100.000đ</span>
-                  <button class="btn btn-add">+</button>
+                  <button class="btn btn-add" onClick="addFood(2)">+</button>
                 </div>
               </div>
               <div class="food-actions__rate">
@@ -125,7 +137,7 @@
                 <h2>Chả giò</h2>
                 <div class="food-actions__add">
                   <span class="food-price">100.000đ</span>
-                  <button class="btn btn-add">+</button>
+                  <button class="btn btn-add" onClick="addFood(3)">+</button>
                 </div>
               </div>
               <div class="food-actions__rate">
@@ -139,7 +151,7 @@
             <div class="food-content__description">
               Nguyên liệu chính là thịt lợn, miến, trứng gà, nấm mèo,... và một
               số gia vị thông dụng của ẩm thực Việt như hành lá, tiêu, nước mắm,
-              được cuốn bằng bánh tráng và chiên ngập dầu. ĐĐược ăn kèm với nước
+              được cuốn bằng bánh tráng và chiên ngập dầu. Được ăn kèm với nước
               mắm pha, đồ chua và rau xà lách, các loại rau thơm như húng quế,
               húng cây, diếp cá,...
             </div>
@@ -157,7 +169,7 @@
                 <h2>Phở bò Nam Định</h2>
                 <div class="food-actions__add">
                   <span class="food-price">100.000đ</span>
-                  <button class="btn btn-add">+</button>
+                  <button class="btn btn-add" onClick="addFood(4)">+</button>
                 </div>
               </div>
               <div class="food-actions__rate">
@@ -188,7 +200,7 @@
                 <h2>Nem chua rán</h2>
                 <div class="food-actions__add">
                   <span class="food-price">100.000đ</span>
-                  <button class="btn btn-add">+</button>
+                  <button class="btn btn-add" onClick="addFood(5)">+</button>
                 </div>
               </div>
               <div class="food-actions__rate">
