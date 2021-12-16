@@ -12,6 +12,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/pageMonAn.css" />
@@ -39,6 +41,18 @@
           <li>
             <a href="./danh-gia.html">Đánh giá</a>
           </li>
+          <li class="cart">
+            <button class="btn btn-primary btn-cart">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="amount">0</span>
+            </button>
+            <div class="my-cart">
+              <div class="list-products">
+                <p>Bạn chưa thêm món ăn nào.</p>
+              </div>
+              <span class="total-amount">0</span>
+            </div>
+          </li>
         </ul>
         <button class="navbar__btn"><i class="fas fa-bars"></i></button>
         <div class="overlay"></div>
@@ -64,7 +78,7 @@
                 <h2>Bánh canh hẹ</h2>
                 <div class="food-actions__add">
                   <span class="food-price">100.000đ</span>
-                  <button class="btn btn-add">+</button>
+                  <button class="btn btn-add" onClick="addFood(6)">+</button>
                 </div>
               </div>
               <div class="food-actions__rate">
@@ -95,7 +109,7 @@
                 <h2>Bánh cuốn</h2>
                 <div class="food-actions__add">
                   <span class="food-price">100.000đ</span>
-                  <button class="btn btn-add">+</button>
+                  <button class="btn btn-add" onClick="addFood(7)">+</button>
                 </div>
               </div>
               <div class="food-actions__rate">
@@ -130,7 +144,7 @@
                 <h2>Bún bò Huế</h2>
                 <div class="food-actions__add">
                   <span class="food-price">100.000đ</span>
-                  <button class="btn btn-add">+</button>
+                  <button class="btn btn-add" onClick="addFood(8)">+</button>
                 </div>
               </div>
               <div class="food-actions__rate">
@@ -164,7 +178,7 @@
                 <h2>Mì Quảng</h2>
                 <div class="food-actions__add">
                   <span class="food-price">100.000đ</span>
-                  <button class="btn btn-add">+</button>
+                  <button class="btn btn-add" onClick="addFood(9)">+</button>
                 </div>
               </div>
               <div class="food-actions__rate">
@@ -200,7 +214,7 @@
                 <h2>Cơm gà Tam Kỳ</h2>
                 <div class="food-actions__add">
                   <span class="food-price">100.000đ</span>
-                  <button class="btn btn-add">+</button>
+                  <button class="btn btn-add" onClick="addFood(10)">+</button>
                 </div>
               </div>
               <div class="food-actions__rate">
@@ -273,6 +287,8 @@
       integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
