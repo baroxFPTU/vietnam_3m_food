@@ -78,7 +78,7 @@ p {
 /* Header */
 #header {
   position: fixed;
-  z-index: 99;
+  z-index: 999;
   width: 100%;
   background: transparent;
   transition: all 0.5s ease-in-out;
@@ -419,5 +419,53 @@ img {
   .navbar > li > a.active {
     border-bottom: none;
     background-color: rgba(0, 0, 0, 0.06);
+  }
+}
+
+/* loading */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.loading .left {
+  position: fixed;
+  top: 0;
+  width: 50%;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  animation: loadingLeft 0.8s 0.7s forwards;
+}
+
+.loading .right {
+  position: fixed;
+  top: 0;
+  width: 50%;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  animation: loadingRight 0.8s 0.7s forwards;
+}
+
+@keyframes loadingLeft {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes loadingRight {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -100%;
   }
 }

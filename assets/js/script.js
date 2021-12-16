@@ -142,6 +142,7 @@ const listProductsElement = document.querySelector(".list-products");
 const totalAmountElement = document.querySelector(".total-amount");
 
 function updateListProduct(list) {
+  if (!listProductsElement) return;
   const htmls = list
     .map(function (item) {
       return `
@@ -197,14 +198,14 @@ function addFood(id) {
 }
 
 $(document).ready(function () {
+  if (AOS) {
+    AOS.init();
+  }
+
   const cartLocalStorage = localStorage.getItem("cart");
   if (cartLocalStorage) {
     cart = JSON.parse(cartLocalStorage);
     updateListProduct(cart);
-  }
-
-  if (AOS) {
-    AOS.init();
   }
 
   let header = $("#header");
@@ -243,6 +244,10 @@ $(document).ready(function () {
   });
 
   navbarBtn.click(showNavbar);
-
   overlay.click(hideNavbar);
+
+  // Hide loading
+  setTimeout(function () {
+    $(".loading").hide();
+  }, 600);
 });

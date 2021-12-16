@@ -12,6 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/danhgia.css" />
@@ -48,8 +49,10 @@
     <section class="services">
       <div class="wrapper">
         <div class="services__content">
-          <h2>Tại sao lại chọn chúng tôi?</h2>
-          <p>
+          <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            Tại sao lại chọn chúng tôi?
+          </h2>
+          <p data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea velit
             ducimus quae! Laudantium molestias provident mollitia reiciendis,
             earum assumenda sunt ipsam quisquam voluptates! Similique quas
@@ -57,7 +60,12 @@
           </p>
         </div>
         <div class="services__list">
-          <div class="service">
+          <div
+            class="service"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            data-aos="fade-down-right"
+          >
             <div class="service__illustr">
               <img src="./assets/img/illus/illu-1.svg" alt="" />
             </div>
@@ -68,7 +76,12 @@
               placerat ac imperdiet vitae, pulvinar condimentum dolor.
             </p>
           </div>
-          <div class="service">
+          <div
+            class="service"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            data-aos="fade-down-right"
+          >
             <div class="service__illustr">
               <img src="./assets/img/illus/illu-2.svg" alt="" />
             </div>
@@ -79,7 +92,12 @@
               placerat ac imperdiet vitae, pulvinar condimentum dolor.
             </p>
           </div>
-          <div class="service">
+          <div
+            class="service"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+            data-aos="fade-down-right"
+          >
             <div class="service__illustr">
               <img src="./assets/img/illus/illu-3.svg" alt="" />
             </div>
@@ -90,7 +108,12 @@
               placerat ac imperdiet vitae, pulvinar condimentum dolor.
             </p>
           </div>
-          <div class="service">
+          <div
+            class="service"
+            data-aos-duration="1000"
+            data-aos-delay="700"
+            data-aos="fade-down-right"
+          >
             <div class="service__illustr">
               <img src="./assets/img/illus/illu-4.svg" alt="" />
             </div>
@@ -101,7 +124,12 @@
               placerat ac imperdiet vitae, pulvinar condimentum dolor.
             </p>
           </div>
-          <div class="service">
+          <div
+            class="service"
+            data-aos-duration="1000"
+            data-aos-delay="900"
+            data-aos="fade-down-right"
+          >
             <div class="service__illustr">
               <img src="./assets/img/illus/illu-5.svg" alt="" />
             </div>
@@ -112,7 +140,12 @@
               placerat ac imperdiet vitae, pulvinar condimentum dolor.
             </p>
           </div>
-          <div class="service">
+          <div
+            class="service"
+            data-aos-duration="1000"
+            data-aos-delay="1100"
+            data-aos="fade-down-right"
+          >
             <div class="service__illustr">
               <img src="./assets/img/illus/illu-6.svg" alt="" />
             </div>
@@ -129,9 +162,14 @@
 
     <section class="feedback">
       <div class="wrapper">
-        <h2>Đánh giá của thực khách</h2>
+        <h2 data-aos="fade-down">Đánh giá của thực khách</h2>
         <div class="feedback__list">
-          <div class="feedback__item">
+          <div
+            class="feedback__item"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
             <div class="feedback__avt">
               <img src="./assets/img/feedback/avt1.png" alt="" />
             </div>
@@ -142,14 +180,19 @@
               <span class="feedback-star"><i class="fas fa-star"></i></span>
               <span class="feedback-star"><i class="fas fa-star"></i></span>
             </div>
-            <p>
+            <p data-aos="fade-down">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Repudiandae libero, molestiae delectus nesciunt asperiores,
               perspiciatis eius dolorem corrupti oluptas magnam.
             </p>
             <span class="feedback__name"> Thảo Ngân </span>
           </div>
-          <div class="feedback__item">
+          <div
+            class="feedback__item"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <div class="feedback__avt">
               <img src="./assets/img/feedback/avt2.png" alt="" />
             </div>
@@ -167,7 +210,12 @@
             </p>
             <span class="feedback__name">Thiện Nhân</span>
           </div>
-          <div class="feedback__item">
+          <div
+            class="feedback__item"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
             <div class="feedback__avt">
               <img src="./assets/img/feedback/avt3.png" alt="" />
             </div>
@@ -233,11 +281,16 @@
         </ul>
       </div>
     </div>
+    <div class="loading">
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
       integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
