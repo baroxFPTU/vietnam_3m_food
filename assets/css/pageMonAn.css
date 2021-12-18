@@ -47,7 +47,6 @@
 .food .food__wrapper .food__thumb {
   flex: 1;
   width: 400px;
-  height: 350px;
   border-radius: 20px;
   overflow: hidden;
 

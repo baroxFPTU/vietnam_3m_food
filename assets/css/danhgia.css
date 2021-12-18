@@ -65,7 +65,7 @@
 
 .service p {
   text-align: center;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 /* feedback */
@@ -109,6 +109,7 @@
 
 .feedback__item {
   background-color: #fff;
+  max-width: 400px;
   padding: 50px 60px;
   border-radius: 15px;
   display: flex;
@@ -150,4 +151,5 @@
   font-size: 24px;
   font-family: "iCiel Pacifico", sans-serif;
   width: 100%;
+  margin-top: auto;
 }
